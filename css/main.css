@@ -130,7 +130,3 @@
   .tab-active .accordion-desc {
     display: block; /* Mostramos la descripción cuando está activo */
   }
-  
-  .tab-active .accordion-title {
-    font-size: 30px;
-  }
