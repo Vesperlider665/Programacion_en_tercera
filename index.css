@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  menu {
+    background-color: #101010;
+    width: 100%;
+    height: 110px;
+    border: 1px solid #bbb;
+  }
+  
+  .menu-up {
+    height: 50%;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+  
+  .menu-down {
+    height: 50%;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-izquierda {
+    padding-left: 50px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+  }
+  
+  .menu-izquierda a {
+    text-decoration: none;
+    color: #bbb;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  .menu-izquierda a:hover {
+    color: white;
+  }
+  
+  .menu-derecha {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  
+  .menu-derecha a {
+    color: #bbb;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .menu-derecha a:hover {
+    color: white;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    background-color: #101010;
+  }
+  
+  .main-accordion-container {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .accordion-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top: 1px solid black;
+  }
+  
+  .accordion-item:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+  }
+  
+  .accordion-title {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .accordion-desc {
+    display: none; /* Ocultamos la descripción por defecto */
+    width: 100%;
+    background-color: gainsboro;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .tab-active .accordion-desc {
+    display: block; /* Mostramos la descripción cuando está activo */
+  }
+  
+  .tab-active .accordion-title {
+    font-size: 30px;
+  }
