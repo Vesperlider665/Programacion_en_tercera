@@ -57,12 +57,11 @@ const dataAccordion = [
   };
   ACCORDION.init();
 
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu'); // Opcional:  Si tienes un menú para desplegar
+  const hamburger = document.getElementById('hamburger-icon');
+        const navMenu = document.getElementById('nav-menu');
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active'); // Añade o quita la clase active
-    if(menu) menu.classList.toggle('active'); // Opcional:  Añadir o quitar clase al menú
-  });
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
 })();
