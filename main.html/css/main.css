@@ -138,8 +138,8 @@
   .hamburger {
     display: block;
     position: relative;
-    width: 25px;
-      height: 25px;
+    width: 100px;
+      height: 100px;
       cursor: pointer;
   }
 
